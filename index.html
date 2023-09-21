@@ -11,6 +11,15 @@
   <title>Ticker</title>
 </head>
 <body>
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+        <img src="images/01.jpg" alt="">
+        <p> Member when shitcoins are fun?
+        </p>
+        <button id="closeModal">Yeah, i member</button>
+    </div>
+  </div>
+
   <section class="hero-container">
     <img src="images/01.jpg" alt="grapes">
     <h2>welcome to <br> <span>ticker</span></h2>
@@ -124,5 +133,24 @@
       </button>
     </div>
   </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const modal = document.getElementById('myModal');
+        const closeModal = document.getElementById('closeModal');
+
+        modal.style.display = 'block';
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+  </script>
 </body>
 </html>

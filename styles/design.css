@@ -7,6 +7,65 @@
 body{
   background-color: rgb(31, 17, 36);
 }
+
+/***********Modal***************/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease-in-out;
+}
+.modal-content img{
+  width: 200px;
+  padding-bottom: 20px;
+}
+.modal-content p{
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(31, 17, 36);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-content button{
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 7px 20px;
+  background-color:hsl(284, 36%, 10%);
+  color:hsl(280, 39%, 95%);
+  outline-width: 2px;
+  outline-color: hsl(0, 0%, 0%);
+  outline-offset: 2px;
+  outline-style: solid;
+}
+
+
+
 .hero-container{
   display: flex;
   flex-direction: column;
@@ -22,12 +81,12 @@ body{
 }
 .hero-container h2{
   font-size: 70px;
-  color: white;
+  color: hsl(280, 39%, 95%);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
   line-height: 1;
 }
 .about-container{
@@ -48,17 +107,17 @@ body{
   font-size: 70px; 
   color: rgb(31, 17, 36);
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
   line-height: 1;
   text-transform: uppercase;
 }
 .about-wrapper div h3{
   font-size: 90px;
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   margin-bottom: 20px;
 }
 .about-wrapper div p{
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   margin-bottom: 20px;
 }
 .about-wrapper button{
@@ -69,7 +128,7 @@ body{
   font-size: 15px;
   text-transform: uppercase;
   background: linear-gradient(25deg, rgb(31, 17, 36), hsl(283, 34%, 57%));
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
 }
 .about-wrapper .image img{
   width: 100%;
@@ -92,10 +151,10 @@ body{
   width: 50%;
 }
 .choice-wrapper div h2, h3{
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   font-size: 60px;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 20px;
@@ -107,7 +166,7 @@ body{
   margin-bottom: 20px;
 }
 .choice-wrapper div p{
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   margin-bottom: 20px;
 }
 
@@ -127,9 +186,9 @@ body{
 .milady, .toke{
   margin-bottom: 20px;
   font-size: 50px;
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;
@@ -145,16 +204,16 @@ body{
 .info-container .bottom .one, .two, .three{
   text-align: center;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
 }
 .symbol, .total, .tax{
   font-size: 80px;
-  color: rgb(245, 239, 248);
+  color: hsl(280, 39%, 95%);
   font-weight: 600;
 }
 .milady2, .total-no, .tax-amount{
   font-size: 40px;
-  color: rgb(31, 17, 36);
+  color: hsl(284, 36%, 10%);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(31, 17, 36);
 }
