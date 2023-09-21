@@ -7,9 +7,6 @@
 body{
   background-color: rgb(31, 17, 36);
 }
-
-
-
 .hero-container{
   display: flex;
   flex-direction: column;
@@ -42,6 +39,7 @@ body{
   display: flex;
   gap: 50px;
   padding: 50px 0;
+  align-items: center;
 }
 .about-wrapper div{
   width: 50%;
@@ -73,18 +71,22 @@ body{
   background: linear-gradient(25deg, rgb(31, 17, 36), hsl(283, 34%, 57%));
   color: rgb(245, 239, 248);
 }
-.about-wrapper img{
-  width: 40%;
+.about-wrapper .image img{
+  width: 100%;
 }
 .choice-wrapper{
   display: flex;
   width: 90%;
   margin: 0 auto;
   gap: 50px;
-  padding: 50px 0
+  padding: 50px 0;
+  align-items: center;
 }
-.choice-wrapper img{
+.choice-wrapper .image{
   width: 50%;
+}
+.choice-wrapper .image img{
+  width: 100%;
 }
 .choice-wrapper div{
   width: 50%;
@@ -287,7 +289,7 @@ body{
   height: 50px;
 }
 
-
+/**********Mobile Mode************/
 @media (max-width: 375px) {
   .hero-container img{
     width: 300px;
@@ -333,7 +335,7 @@ body{
     flex-direction: column;
   }
   .choice-wrapper img{
-    width: 100%;
+    
   }
   .choice-wrapper div{
     width: 100%;
@@ -426,5 +428,50 @@ body{
   }
   .footer p{
     font-size: 50px;
+  }
+}
+
+/**********Tablet Mode***********/
+@media (376px <= width <= 768px) {
+  .about-wrapper div h2{
+    font-size: 50px;
+  }
+  .about-wrapper div h3{
+    font-size: 6rem;
+  }
+  .about-btns, .buy-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  .choice-wrapper div h2{
+    font-size: 3rem;
+  }
+  .choice-wrapper img{
+    object-fit: fill;
+  }
+  .choice-wrapper div h3{
+    font-size: 6rem;
+  }
+  .milady{
+    font-size: 3rem;
+  }
+  .toke{
+    font-size: 5rem;
+  }
+  .symbol, .total, .tax{
+    font-size: 3rem;
+  }
+  .buy-wrapper div h2{
+    font-size: 3rem;
+  }
+  .buy-wrapper div h3{
+    font-size: 5rem;
+  }
+  .phase-wrapper section{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
