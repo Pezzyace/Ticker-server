@@ -334,9 +334,6 @@ body{
   .choice-wrapper{
     flex-direction: column;
   }
-  .choice-wrapper img{
-    
-  }
   .choice-wrapper div{
     width: 100%;
   }
