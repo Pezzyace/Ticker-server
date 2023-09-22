@@ -583,20 +583,20 @@
     width: 90%;
     margin: 0 auto;
   }
-  .phase-two{
-    height: 370px;
-    margin-top: 0;
+  .phase-wrapper section .phase-one{
+    height: 300px;
   }
-  .phase-three{
+  .phase-two, .phase-three {
+    height: 300px;
     margin-top: 0;
   }
   .phase-one p, .phase-two p, .phase-three p{
     font-size: 13px;
-    
   }
-  .phase-three img{
-    top: 25%;
+  .phase-one img, .phase-two img, .phase-three img{
+    top: 5%;
   }
+
   .partners-container p{
     line-height: 1;
     font-size: 3rem;
@@ -726,7 +726,7 @@
   }
 }
 
-@media (375px <= width <= 540px){
+@media (376px <= width <= 540px){
   .modal-content p{
     font-size: 15px;
   }
