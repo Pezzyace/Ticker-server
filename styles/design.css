@@ -106,7 +106,7 @@
   position: relative;
 }
 .hero-container img{
-  width: 600px;
+  width: 60%;
   margin-bottom: 30px;
   border-radius: 10px;
 }
@@ -178,7 +178,7 @@
   width: 90%;
   margin: 0 auto;
   gap: 50px;
-  padding: 50px 0;
+  padding: 30px 0;
   align-items: center;
   z-index: 1;
   position: relative;
@@ -188,6 +188,7 @@
 }
 .choice-wrapper .image img{
   width: 100%;
+  border-radius: 10px;
 }
 .choice-wrapper div{
   width: 50%;
@@ -270,9 +271,14 @@
   gap: 50px;
   z-index: 1;
   position: relative;
+  align-items: center;
 }
-.buy-wrapper img{
-  width: 350px;
+.buy-wrapper .image{
+  width: 30%;
+}
+.buy-wrapper .image img{
+  width: 100%;
+  border-radius: 10px;
 }
 .buy-wrapper div{
   width: 70%;
@@ -314,7 +320,7 @@
 .phase-wrapper{
   margin: 0 auto;
   width: 90%;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .phase-wrapper h3{
   font-size: 100px;
@@ -340,7 +346,8 @@
   border-radius: 20px;
 }
 .phase-one .heading, .phase-two .heading, .phase-three .heading, .footer p{
-  font-size: 75px;
+  font-size: 50px;
+  width: 80%;
   color: hsl(280, 39%, 95%);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: hsl(0, 0%, 0%);
@@ -385,6 +392,28 @@
   color: hsl(280, 39%, 95%);
   font-size: 14px;
 }
+.partners-container{
+  background-color:hsl(283, 34%, 57%);
+}
+.partners-container p{
+  text-align: center;
+  font-size: 5rem;
+  text-transform:uppercase;
+  font-weight: 700;
+  color: hsl(280, 39%, 95%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsl(0, 0%, 0%);
+}
+.partners-wrapper{
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.partner-img{
+  width: 15rem;
+}
 .footer {
   display: flex;
   align-items: center;
@@ -400,6 +429,7 @@
 }
 .footer p{
   font-size: 70px;
+  text-align: center;
 }
 .footer button{
   height: 50px;
@@ -424,7 +454,7 @@
 /**********Mobile Mode************/
 @media (max-width: 375px) {
   .hero-container img{
-    width: 300px;
+    width: 80%;
   }
   .hero-container h2{
     font-size: 45px;
@@ -451,7 +481,7 @@
     margin-bottom: 20px;
   }
   .about-wrapper div h3{
-    font-size: 70px;
+    font-size: 4.3rem;
     text-align: center;
   }
   .about-wrapper div h4{
@@ -481,7 +511,7 @@
     text-align: center;
   }
   .choice-wrapper div h3{
-    font-size: 70px;
+    font-size: 4.3rem;
     text-align: center;
   }
   .choice-wrapper div p{
@@ -506,9 +536,11 @@
   .buy-wrapper{
     flex-direction: column;
   }
-  .buy-wrapper img{
-    width: 300px;
-    margin: 0 auto;
+  .buy-wrapper .image{
+    width: 100%;
+  }
+  .buy-wrapper .image img{
+    width: 100%;
   }
   .buy-wrapper div{
     width: 100%;
@@ -565,6 +597,17 @@
   .phase-three img{
     top: 25%;
   }
+  .partners-container p{
+    line-height: 1;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .partners-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
   .footer .logo{
     width: 270px;
     margin-bottom: -20px;
@@ -582,18 +625,14 @@
   .about-wrapper div h3{
     font-size: 6rem;
   }
-  .about-btns, .buy-btns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin: 0;
+  .about-wrapper div{
+    width: 100%;
+  }
+  .about-btns{
+    width: 100%;
   }
   .choice-wrapper div h2{
     font-size: 3rem;
-  }
-  .choice-wrapper img{
-    object-fit: fill;
   }
   .choice-wrapper div h3{
     font-size: 6rem;
@@ -613,8 +652,18 @@
   .buy-wrapper div h3{
     font-size: 5rem;
   }
+  .buy-wrapper div{
+    width: 100%;
+  }
+  .buy-wrapper .image{
+    width: 50%;
+  }
+  .buy-wraper .image img{
+    width: 100%;
+  }
   .phase-wrapper h3{
     font-size: 6.5rem;
+    margin-bottom: 30px;
   }
   .phase-wrapper section{
     grid-template-columns: 1fr 1fr;
@@ -631,8 +680,106 @@
     margin-top: 0;
     top: 26rem;
     left: 30%;
+    width: 
   }
   .phase-three img{
     margin-top: 30px;
+  }
+  .partners-container{
+    position: relative;
+  }
+  .partners-container p{
+    margin-bottom: 20px;
+  }
+  .partners-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 6rem;
+  }
+  .trust{
+    position: absolute;
+    top: 13.5rem;
+  }
+}
+
+@media (769px <= width <= 1024px) {
+  .partners-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .phase-wrapper section{
+    gap: 10px;
+  }
+  .phase-one img, .phase-two img, .phase-three img{
+    z-index: 1;
+  }
+  .phase-one, .phase-two, .phase-three{
+    width: 100%;
+  }
+  .footer p{
+    text-align: center;
+  }
+  .symbol, .total, .tax{
+    font-size: 4.5rem;
+  }
+}
+@media (375px <= width <= 414px){
+  .modal-content p{
+    font-size: 15px;
+  }
+  .hero-wrapper img{
+    width: 50%;
+  }
+  .about-wrapper{
+    flex-direction: column;
+  }
+  .choice-wrapper{
+    flex-direction: column;
+  }
+  .choice-wrapper div{
+    width: 80%;
+  }
+  .choice-wrapper .image{
+    width: 80%;
+  }
+  .choice-wrapper p{
+    text-align: center;
+  }
+  .buy-wrapper{
+    flex-direction: column-reverse;
+  }
+  .buy-wrapper .image{
+    width: 80%;
+  }
+  .toke{
+    font-size: 3rem;
+  }
+  .info-container .bottom{
+    flex-direction: column-reverse
+  }
+  .phase-wrapper section{
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  .phase-three{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .partners-wrapper{
+    grid-template-columns: 1fr;
+  }
+  .trust{
+    position: relative;
+    top: 0;
+  }
+  .phase-one img, .phase-two img, .phase-three img{
+    right: -10px;
+  }
+  .phase-two img{
+    right: -10px;
+    top: 50px;
   }
 }
