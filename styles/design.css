@@ -724,7 +724,7 @@
     font-size: 4.5rem;
   }
 }
-@media (375px <= width <= 414px){
+@media (375px <= width <= 540px){
   .modal-content p{
     font-size: 15px;
   }
