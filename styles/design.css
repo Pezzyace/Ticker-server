@@ -106,16 +106,16 @@
   position: relative;
 }
 .hero-container img{
-  width: 350px;
-  margin-bottom: 20px;
-  border-radius: 30px;
+  width: 600px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 .hero-container h2{
   font-size: 70px;
   color: hsl(280, 39%, 95%);
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: hsl(0, 0%, 0%);
   line-height: 1;
@@ -147,7 +147,13 @@
 .about-wrapper div h3{
   font-size: 90px;
   color: hsl(280, 39%, 95%);
+  margin: 0;
+}
+.about-wrapper div h4{
+  font-size: 35px;
+  color: rgb(31, 17, 36);
   margin-bottom: 20px;
+  line-height: 1;
 }
 .about-wrapper div p{
   color: hsl(280, 39%, 95%);
@@ -178,7 +184,7 @@
   position: relative;
 }
 .choice-wrapper .image{
-  width: 50%;
+  width: 30%;
 }
 .choice-wrapper .image img{
   width: 100%;
@@ -310,18 +316,15 @@
   width: 90%;
   padding: 50px 0;
 }
-.phase-wrapper h2{
-  font-size: 70px;
-  color: hsl(284, 36%, 10%);
+.phase-wrapper h3{
+  font-size: 100px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: hsl(0, 0%, 0%);
   line-height: 1;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
-.phase-wrapper h3{
-  font-size: 100px;
-  text-transform: lowercase;
-}
+
 .phase-wrapper section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -347,13 +350,36 @@
   margin-bottom: 30px;
 }
 .phase-one  {
-  background-color: hsl(198, 91%, 61%);
+  background-color: hsl(198, 100%, 47%);
+  position: relative;
+}
+.phase-one img{
+  position: absolute;
+  width: 100px;
+  right: -30px;
+  top: 100px
 }
 .phase-two  {
   background-color: hsl(244, 41%, 40%);
+  margin-top: 50px;
+  position: relative;
+}
+.phase-two img{
+  position: absolute;
+  width: 100px;
+  right: -30px;
+  top: 80px
 }
 .phase-three  {
   background-color: hsl(284, 36%, 10%);
+  margin-top: 100px;
+  position: relative;
+}
+.phase-three img{
+  position: absolute;
+  width: 100px;
+  right: -30px;
+  top: 80px
 }
 .phase-one p, .phase-two p, .phase-three p{
   color: hsl(280, 39%, 95%);
@@ -426,6 +452,10 @@
   }
   .about-wrapper div h3{
     font-size: 70px;
+    text-align: center;
+  }
+  .about-wrapper div h4{
+    font-size: 25px;
     text-align: center;
   }
   .about-container div p{
@@ -523,10 +553,17 @@
   }
   .phase-two{
     height: 370px;
+    margin-top: 0;
+  }
+  .phase-three{
+    margin-top: 0;
   }
   .phase-one p, .phase-two p, .phase-three p{
     font-size: 13px;
     text-align: center;
+  }
+  .phase-three img{
+    top: 90%;
   }
   .footer .logo{
     width: 270px;
@@ -576,8 +613,26 @@
   .buy-wrapper div h3{
     font-size: 5rem;
   }
+  .phase-wrapper h3{
+    font-size: 6.5rem;
+  }
   .phase-wrapper section{
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin-top: 20px;
+    padding-bottom: 26rem;
+    position: relative;
+  }
+  .phase-two{
+    margin-top: 0;
+  }
+  .phase-three{
+    position: absolute;
+    margin-top: 0;
+    top: 26rem;
+    left: 30%;
+  }
+  .phase-three img{
+    margin-top: 30px;
   }
 }
