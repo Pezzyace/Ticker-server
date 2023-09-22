@@ -592,7 +592,7 @@
   }
   .phase-one p, .phase-two p, .phase-three p{
     font-size: 13px;
-    text-align: center;
+    
   }
   .phase-three img{
     top: 25%;
@@ -680,6 +680,7 @@
     margin-top: 0;
     top: 26rem;
     left: 30%;
+    width: 40%;
   }
   .phase-three img{
     margin-top: 30px;
@@ -724,6 +725,7 @@
     font-size: 4.5rem;
   }
 }
+
 @media (375px <= width <= 540px){
   .modal-content p{
     font-size: 15px;
@@ -742,6 +744,10 @@
   }
   .choice-wrapper .image{
     width: 80%;
+  }
+  .choice-wrapper div h3{
+    font-size: 60px;
+    text-align: center;
   }
   .choice-wrapper p{
     text-align: center;
@@ -767,8 +773,14 @@
     top: 0;
     left: 0;
   }
+  .phase-wrapper h3{
+    font-size: 50px;
+  }
   .partners-wrapper{
     grid-template-columns: 1fr;
+  }
+  .partners-container p{
+    font-weight: 40px;
   }
   .trust{
     position: relative;
