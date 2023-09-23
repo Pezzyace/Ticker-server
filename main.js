@@ -8,9 +8,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
       modal.style.display = 'none';
   });
 
-  window.addEventListener('click', (event) => {
-      if (event.target === modal) {
-          modal.style.display = 'none';
-      }
-  });
 });
+
+const videoTag = document.getElementById('video-bg');
+
+window.addEventListener('load', () => {
+    videoTag.load();
+})
