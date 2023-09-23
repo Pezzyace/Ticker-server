@@ -13,5 +13,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const videoTag = document.getElementById('video-bg');
 
 window.addEventListener('load', () => {
-    videoTag.load();
+    videoTag.muted = false;
 })
