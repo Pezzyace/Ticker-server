@@ -215,18 +215,27 @@ audio{
   color: hsl(280, 39%, 95%);
   margin-bottom: 20px;
 }
+.scam2{
+  position: absolute;
+  right: 0;
+  height: 430px;
+}
+.scam4{
+  position: absolute;
+  right: 0;
+  height: 460px;
+}
 
 .info-container{
   position: relative;
+  background-color: hsl(283, 34%, 57%);
 }
-.info-container img{
+.scam5{
   position: absolute;
-  z-index: 1;
-  width: 80%;;
-  opacity: 0.5;
+  bottom: 0;
+  left: 0;
 }
 .info-container, .top{
-  background-color: hsl(283, 34%, 57%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -287,6 +296,12 @@ audio{
 }
 .buy-wrapper .image{
   width: 30%;
+}
+.scam{
+  position: absolute;
+  right: 0;
+  width: 350px;
+  z-index: -1;
 }
 .buy-wrapper .image img{
   width: 100%;
@@ -361,7 +376,7 @@ audio{
   margin-top: 50px;
 }
 .phase-wrapper section .phase-one, .phase-two, .phase-three{
-  height: 350px;
+  height: 300px;
   padding: 20px;
   border-radius: 20px;
 }
@@ -414,6 +429,13 @@ audio{
 }
 .partners-container{
   background-color:hsl(283, 34%, 57%);
+  position: relative;
+}
+.scam3{
+  position: absolute;
+  height: 300px;
+  top: -220px;
+  z-index: 1;
 }
 .partners-container p{
   text-align: center;
@@ -423,6 +445,7 @@ audio{
   color: hsl(280, 39%, 95%);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: hsl(0, 0%, 0%);
+  z-index: 10;
 }
 .partners-wrapper{
   display: flex;
@@ -430,6 +453,7 @@ audio{
   width: 80%;
   margin: 0 auto;
   padding-bottom: 50px;
+  z-index: 10;
 }
 .partner-img{
   width: 15rem;
@@ -635,6 +659,26 @@ audio{
   .footer p{
     font-size: 50px;
   }
+  .scam2{
+    height: 100%;
+  }
+  .scam4{
+    top: 0;
+    height: 200px;
+  }
+  .scam5{
+    height: 200px;
+  }
+  .scam{
+    bottom: 0;
+    width: 50%;
+    right: 80px;
+  }
+  .scam3{
+    bottom: 0;
+    top: 220px;
+    height: 100px;
+  }
 }
 
 /**********Tablet Mode***********/
@@ -722,6 +766,21 @@ audio{
     position: absolute;
     top: 13.5rem;
   }
+  .scam{
+    top: 20px;
+    width: 200px;
+  }
+  .scam5{
+    height: 150px;
+  }
+  .scam4{
+    height: 200px;
+    top: 20px;
+  }
+  .scam3{
+    top: 220px;
+    height: 100px;
+  }
 }
 
 @media (769px <= width <= 1024px) {
@@ -743,6 +802,22 @@ audio{
   }
   .symbol, .total, .tax{
     font-size: 4.5rem;
+  }
+  .scam5{
+    height: 250px;
+  }
+  .scam4{
+    height: 300px;
+    right: 30px;
+  }
+  .scam{
+    width: 250px;
+  }
+  .scam3{
+    top:0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
   }
 }
 
@@ -792,6 +867,7 @@ audio{
     position: relative;
     top: 0;
     left: 0;
+    width: 100%
   }
   .phase-wrapper h3{
     font-size: 50px;
