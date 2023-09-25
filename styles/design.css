@@ -173,6 +173,11 @@ audio{
   color: hsl(280, 39%, 95%);
   cursor: pointer;
 }
+.about-wrapper button:hover {
+  outline-color:  hsl(285, 37%, 23%);
+  outline-offset: 2px;
+  outline-style: solid;
+}
 .about-wrapper .image img{
   width: 100%;
 }
@@ -281,7 +286,32 @@ audio{
   font-size: 40px;
   color: hsl(284, 36%, 10%);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(31, 17, 36);
+  -webkit-text-stroke-color: hsl(284, 36%, 10%);
+}
+.care{
+  margin: 20px 0px;
+  font-size: 15px;
+  color: hsl(280, 39%, 95%);
+}
+.info-container a button{
+  border: none;
+  border-radius: 30px;
+  padding: 7px 20px;
+  margin-right: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: linear-gradient(25deg, hsl(284, 36%, 10%), hsl(283, 34%, 57%));
+  color: hsl(280, 39%, 95%);
+  cursor: pointer;
+  outline-width: 2px;
+  outline-color:  hsl(285, 37%, 23%);
+  outline-offset: 2px;
+  outline-style: solid;
+  transition: 0.5s;
+}
+.info-container a button:hover{
+  background: #fff;
+  color:  hsl(284, 36%, 10%);
 }
 
 .buy-wrapper{
@@ -337,8 +367,13 @@ audio{
   background: linear-gradient(25deg, hsl(284, 36%, 10%), hsl(283, 34%, 57%));
   color: hsl(280, 39%, 95%);
   cursor: pointer;
+  transition: .2s;
 }
-
+.buy-wrapper button:hover{
+  outline-color:  hsl(285, 37%, 23%);
+  outline-offset: 2px;
+  outline-style: solid;
+}
 .phase-container{
   background-color: hsl(283, 34%, 57%);
   z-index: 1;
@@ -446,6 +481,7 @@ audio{
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: hsl(0, 0%, 0%);
   z-index: 10;
+  margin-bottom: 30px;
 }
 .partners-wrapper{
   display: flex;
@@ -454,6 +490,9 @@ audio{
   margin: 0 auto;
   padding-bottom: 50px;
   z-index: 10;
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
 .partner-img{
   width: 15rem;
