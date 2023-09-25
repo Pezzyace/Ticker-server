@@ -397,9 +397,9 @@ audio{
 }
 .phase-one img{
   position: absolute;
-  width: 100px;
-  right: -30px;
-  top: 100px
+  width: 130px;
+  right: -20px;
+  top: 50px
 }
 .phase-two  {
   background-color: hsl(244, 41%, 40%);
@@ -408,8 +408,8 @@ audio{
 }
 .phase-two img{
   position: absolute;
-  width: 100px;
-  right: -30px;
+  width: 150px;
+  right: -20px;
   top: 80px
 }
 .phase-three  {
@@ -419,7 +419,7 @@ audio{
 }
 .phase-three img{
   position: absolute;
-  width: 100px;
+  width: 180px;
   right: -30px;
   top: 80px
 }
@@ -637,10 +637,12 @@ audio{
   .phase-one p, .phase-two p, .phase-three p{
     font-size: 13px;
   }
-  .phase-one img, .phase-two img, .phase-three img{
-    top: 5%;
+  .phase-two img, .phase-three img{
+    top: 60%;
   }
-
+  .phase-one img{
+    top: 50%;
+  }
   .partners-container p{
     line-height: 1;
     font-size: 3rem;
@@ -746,8 +748,13 @@ audio{
     left: 30%;
     width: 40%;
   }
+  .phase-one img, .phase-two img{
+    margin-top: 30px;
+    right: -40px;
+  }
   .phase-three img{
     margin-top: 30px;
+    right: -90px;
   }
   .partners-container{
     position: relative;
@@ -791,8 +798,12 @@ audio{
   .phase-wrapper section{
     gap: 10px;
   }
-  .phase-one img, .phase-two img, .phase-three img{
+  .phase-one img{
+    top: 15git 0px;
+  }
+  .phase-two img, .phase-three img{
     z-index: 1;
+    top: 200px;
   }
   .phase-one, .phase-two, .phase-three{
     width: 100%;
