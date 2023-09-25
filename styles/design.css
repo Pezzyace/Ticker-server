@@ -292,6 +292,7 @@ audio{
   margin: 20px 0px;
   font-size: 15px;
   color: hsl(280, 39%, 95%);
+  z-index: 1;
 }
 .info-container a button{
   border: none;
@@ -616,6 +617,14 @@ audio{
   .milady2, .total-no, .tax-amount{
     font-size: 25px;
   }
+  .care{
+    text-align: center;
+    z-index: 10;
+    width: 80%;
+  }
+  .info-container-btns a button{
+    z-index: 10;
+  }
   .buy-wrapper{
     flex-direction: column;
   }
@@ -709,6 +718,7 @@ audio{
   }
   .scam5{
     height: 200px;
+    top: 400px;
   }
   .scam{
     bottom: 0;
@@ -806,26 +816,28 @@ audio{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    gap: 6rem;
-  }
-  .trust{
-    position: absolute;
-    top: 13.5rem;
+    gap: 2rem;
   }
   .scam{
     top: 20px;
     width: 200px;
   }
   .scam5{
-    height: 150px;
+    height: 200px;
   }
   .scam4{
     height: 200px;
-    top: 20px;
+    top: -10px;
+    right: 30px;
   }
   .scam3{
     top: 220px;
     height: 100px;
+  }
+  .care{
+    text-align: center;
+    width: 60%;
+    font-size: 13px;
   }
 }
 
@@ -859,6 +871,7 @@ audio{
   .scam4{
     height: 300px;
     right: 30px;
+    top: -10px;
   }
   .scam{
     width: 250px;
@@ -909,6 +922,10 @@ audio{
   .info-container .bottom{
     flex-direction: column-reverse
   }
+  .care{
+    width: 80%;
+    text-align: center;
+  }
   .phase-wrapper section{
     grid-template-columns: 1fr;
     padding-bottom: 0;
@@ -938,5 +955,8 @@ audio{
   .phase-two img{
     right: -10px;
     top: 50px;
+  }
+  .scam5{
+    top: 395px;
   }
 }
