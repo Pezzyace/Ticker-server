@@ -856,7 +856,7 @@ audio{
 @media (769px <= width <= 1024px) {
   .partners-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .phase-wrapper section{
     gap: 10px;
