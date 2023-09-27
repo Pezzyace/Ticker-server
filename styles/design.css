@@ -473,7 +473,7 @@ audio{
   top: -220px;
   z-index: 1;
 }
-.partners-container p{
+.partners-container .partners{
   text-align: center;
   font-size: 5rem;
   text-transform:uppercase;
@@ -484,12 +484,18 @@ audio{
   z-index: 10;
   margin-bottom: 30px;
 }
+.believe{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: hsl(280, 39%, 95%);
+}
 .partners-wrapper{
   display: flex;
   gap: 40px;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   z-index: 10;
   display: flex;
   align-items:center;
@@ -691,10 +697,16 @@ audio{
   .phase-one img{
     top: 50%;
   }
-  .partners-container p{
+  .partners{
     line-height: 1;
     font-size: 3rem;
     margin-bottom: 30px;
+  }
+  .believe{
+    font-size: 2em;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
   }
   .partners-wrapper{
     flex-direction: column;
