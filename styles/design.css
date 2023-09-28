@@ -697,10 +697,12 @@ audio{
   .phase-one img{
     top: 50%;
   }
-  .partners{
+  .partners-container .partners{
     line-height: 1;
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
   }
   .believe{
     font-size: 2em;
@@ -712,7 +714,7 @@ audio{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
   }
   .footer .logo{
     width: 270px;
@@ -828,7 +830,7 @@ audio{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    gap: 2rem;
+    gap: 4rem;
   }
   .scam{
     top: 20px;
@@ -953,6 +955,7 @@ audio{
   }
   .partners-wrapper{
     grid-template-columns: 1fr;
+    gap: 50px;
   }
   .partners-container p{
     font-weight: 40px;
